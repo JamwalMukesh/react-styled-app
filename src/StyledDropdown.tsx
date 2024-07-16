@@ -20,7 +20,7 @@ const StyledLabel = styled.label`
   margin-right: 0.5em;
   font-weight: bold;
 `;
-
+// Component
 const StyledSelect = styled.select`
   padding: 0.5em 2em 0.5em 0.5em;
   border: 2px solid #ccc;
