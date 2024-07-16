@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import StyledButton from './StyledButton';
+import StyledInput from './StyledInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className="App-header">
+      <StyledButton primary>Primary Button</StyledButton>
+      <StyledButton>Secondary Button</StyledButton>
+      <StyledInput size="2em" />
+    </header>
+  </div>
   );
 }
 
