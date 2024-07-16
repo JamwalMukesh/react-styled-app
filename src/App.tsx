@@ -6,6 +6,8 @@ import { lightTheme, darkTheme } from './theme';
 import styled, { ThemeProvider } from 'styled-components';
 import NewStyledButton from './NewStyledButton';
 import NewStyledInput from './NewStyledInput';
+import StyledCard from './StyledCard';
+import { GlobalStyle } from './GlobalStyle';
 
 const AppWrapper = styled.div`
   background-color: ${props => props.theme.colors.background};
@@ -36,12 +38,17 @@ function App() {
         </header>
       </div>
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <AppWrapper>
           <NewStyledButton primary onClick={toggleTheme}>
             Toggle Theme
           </NewStyledButton>
           <NewStyledButton>Secondary Button</NewStyledButton>
           <NewStyledInput size="2em" />
+          <StyledCard>
+            <h2>Styled Card</h2>
+            <p>This is a card component styled with styled-components.</p>
+          </StyledCard>
         </AppWrapper>
       </ThemeProvider>
     </>
